@@ -1,0 +1,326 @@
+.header {
+    
+    position: relative;
+    position: fixed;
+    width: 100%;
+   
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .branding {
+            display: flex;
+            align-items: center;
+
+            // @include mediaQuery($mobile) {
+            // display: inline-flex;
+            // align-items: center;
+            // }
+            img {
+                height: 2rem;
+                width: 2rem;
+
+                // @include mediaQuery($mobile) {
+                //     height: 20rem;
+                //     width: 20rem;
+                // }
+            }
+
+            h3 {
+                color: $clr-light;
+                margin-right: 10rem;
+                font-size: 2rem;
+                margin-left: 1rem;
+                font-weight: 300;
+            }
+
+            .header__nav1 {
+                display: flex;
+                ul {
+                    display: flex;
+
+                @include mediaQuery($mobile) {
+                    display: flex;
+                }
+                 li {
+
+                     a {
+                        color: $clr-gray;
+                        font-size: clamp(2rem,6vw,2rem);
+                        margin-right: 2rem;
+                        font-weight: 100;
+
+                       
+
+                            &:hover {
+                                color: $clr-light;
+                            }
+                        
+
+                     }
+                 }
+                }
+
+                
+            }
+
+ 
+            
+        }
+
+        .header__actions {
+            // display: flex;
+           
+
+            .header__nav2 {
+                left:0;
+                position: absolute;
+                top: -100rem;
+                background-color: $clr-dark;
+                width: 100%;
+                &.open {
+                    top: 5.5rem;
+                }
+
+                ul {
+                    li {
+                        padding: 1rem;
+                        a {
+                            // background-color: $clr-primary;
+                            color: $clr-light;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .searchh {
+                    display: block;
+
+                    .i {
+                        position: absolute;
+                        color: $clr-light;
+                        top: 3rem;
+                    }
+    
+                    input {
+                        position: relative;
+                        padding: 1.5rem;
+                        background-color: $clr-gray;
+                        border:none;
+                        outline: none;
+                        color: $clr-light;
+                        &::placeholder {
+                            color: $clr-light;
+                        }
+    
+    
+                    }
+
+                }
+
+                
+
+               
+            }
+
+           
+
+            
+        }
+
+       
+    }
+
+    .toggle__menu{
+        display: none;
+        span{
+            width: 3.5rem;
+            height: .3rem;
+            background-color:$clr-light;
+            display: block;
+            margin-bottom: .5rem;
+            border-radius: 5rem;
+            transition: .5s ease;
+        } 
+    }
+
+    .toggle__menu.open{
+        span{
+            &:first-child{ 
+                transform: translate(0,9px) rotate(225deg);
+                transition: .5s ease;
+            }
+           &:nth-child(2){
+                opacity: 0;
+                transition: .5s ease;
+            }
+            &:last-child{
+                transform: translate(0,-7px) rotate(-225deg);
+                transition: .5s ease;
+            }
+        }
+
+        
+    }
+
+      
+       
+
+
+  
+    
+
+@include mediaQuery($break-sm){
+    .toggle__menu{
+        display: block;
+    }
+    .branding{
+        .header__nav1{
+            display: none;
+        }
+        
+    }
+
+    // &__nav1{
+    //     position: unset;
+    //     width: unset;
+    //     height: unset;
+    //     background: none;
+    // }
+    // ul{
+    //     display: flex;
+    //     li{ 
+    //         margin-left: 2rem;
+    //         a{
+    //             color: $clr-light;
+    //         }
+    //         &:hover{
+    //             background: none;
+                
+    //             a{
+    //                 color: $clr-light;
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    &__nav1{
+        display: none;
+    }
+    &__actions{
+        .searchh {
+            display: none;
+        }
+    }
+}
+ }
+
+
+//  bannerrrr
+
+.banner {
+    // padding: 5rem ;
+    // padding-bottom: 5rem;
+    background-color: $clr-dark;
+
+    
+    .title {
+        background-color: $clr-bg;
+        padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+        // width: 100vw;
+        p {
+            font-size: 2rem;
+            color: $clr-gray;
+            text-align: center;
+            margin: 0 4rem;
+            
+          
+            width: 100%;
+
+            a {
+                color: $clr-blue;
+            }
+        }
+
+    }
+
+    &__wrapper {
+        // display: grid;
+       flex-direction: column;
+        display: flex;
+        background-color: $clr-dark;
+
+        
+    }
+
+    &__img img {
+        // padding-top: 5rem;
+        height: 30rem;
+        width: 45rem;
+        font-size: 5rem;
+    //    align-items: center;
+    }
+
+    &__content {
+        text-align: center;
+        // line-height: 2;
+
+
+        h1 {
+            color: $clr-light;
+            font-size: 3rem;
+            font-weight: 300;
+           
+        }
+         h2 {
+            color: $clr-light;
+            font-size: 3rem;
+            font-weight: 550;
+         }
+
+         h6 {
+            font-size: 1.8rem;
+            color: $clr-gray;
+            font-weight: 100;
+         }
+
+         .banner__btn {
+            display: flex;
+            justify-content: center;
+            gap: 0.2rem;
+         }
+
+         button {
+            // line-height: 1rem;
+            background-color: $clr-blue;
+            border: 1px solid transparent;
+            padding: 1rem 1rem;
+            color: $clr-light;
+         }
+
+         button.down {
+            background-color: $clr-blue;
+            border: 1px solid transparent;
+            // padding: 1rem 1rem;
+            color: $clr-light;
+            height: 5rem;
+         }
+
+         .insider {
+            background-color: $clr-bg;
+         }
+
+        p {
+            font-size: 1.5rem;
+            span {
+                color: $clr-blue;
+            }
+        }
+    }
+    }
