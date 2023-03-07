@@ -7,6 +7,9 @@
     <title>VS CODE</title>
     <link rel="stylesheet" href="./scss/main.css">
     <script src="https://kit.fontawesome.com/448ace8674.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js" integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
     <div class="header bg--dark">
@@ -26,12 +29,12 @@
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Learn</a></li>
                         </ul>
-                        <!-- <div class="searchh">
+                        <div class="searchh">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text"   placeholder= "Search Docs">
                             <i class="fa-solid fa-download"></i>
                             <a href="">Download</a>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
                 <div class="header__actions">
@@ -45,15 +48,15 @@
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Learn</a></li>
                             <li><a href="#">Search</a></li>
-                            <li><a href="#"><i class="fa-solid fa-download" id="dl"></i> Download</a></li>
+                            <li class="dl"><a href="#"><i class="fa-solid fa-download"></i> Download</a></li>
 
                         </ul>
-                        <div class="searchh">
+                        <!-- <div class="searchh">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text"   placeholder= "Search Docs">
                             <i class="fa-solid fa-download"></i>
                             <a href="">Download</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="toggle__menu">
@@ -74,8 +77,6 @@
         <div class="container">
            
             <div class="banner__wrapper">
-               
-
                 <div class="banner__content">
                     <h1>Code editing.</h1>
                     <h2>Redefined.</h2>
@@ -87,27 +88,326 @@
 
                 </div>
                     <div class="insider">
-                        <div class="container">
+                        <!-- <div class="container"> -->
                             <div class="insider__content">
-                                <p><span>Web</span>,<span>Insider editions</span>, or <span>other platform</span></p>
-                                
+                                <!-- <p><span>Web</span>,<span>Insider editions</span>, or <span>other platform</span></p> -->
+                                <a href="#">Web</a>
+                                <span>,</span>
+                                <a href="#">Insider editions</a>
+                                <span>, or</span>
+                                <a href="#">other platform</a>
                             </div>
-                        </div>
+                        <!-- </div> -->
                     </div>
 
-                    <p>By using VS Code, you agree to its <span>license and privacy statement.</span></p>
+                    <p class="last">By using VS Code, you agree to its <span>license and privacy statement.</span></p>
                     
 
                 </div>
-
                 <div class="banner__img">
                     <img src="./img/home-screenshot-win-lg.png" alt="">
                 </div>
-
             </div>
         </div>
        
     </section>
+
+    <section class="icon">
+        <div class="container">
+            <div class="icon__wrapper">
+                <div class="icon__item">
+                    
+                    <a href=""><i class="fa-regular fa-lightbulb"></i><br>InteliSense</a>
+
+                </div>
+
+                <div class="icon__item">
+                    
+                    <a href=""><i class="fa-solid fa-bug-slash"></i> <br>Run and Debug</a>
+
+                </div>
+
+                <div class="icon__item">
+                    
+                    <a href=""><i class="fa-solid fa-code-fork"></i><br>Built in Gilt</a>
+
+                </div>
+                <div class="icon__item">
+                    
+                    <a href=""><i class="fa-solid fa-table-cells-large"></i><br>Extension</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+        <div class="review__wrapper">
+            <div class="review__content__card">
+
+                <div class="review__img">
+                    <img src="./img/Una.jpg" alt="">
+                </div>
+
+                <div class="review__content">
+                    <span>Una Kravets</span>
+                    <h5>@Una </h5>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>VS <a href="#">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                </div>
+                
+               
+
+            </div>
+
+            <div class="review__content__card">
+
+                <div class="review__img">
+                    <img src="./img/jadbox.jpg" alt="">
+                </div>
+
+                <div class="review__content">
+                    <span>Jonathan Dunlap</span>
+                    <h5>@jadbox </h5>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
+                </div>
+                
+               
+
+            </div>
+
+            <div class="review__content__card">
+
+                <div class="review__img">
+                    <img src="./img/PKodmad.jpg" alt="">
+                </div>
+
+                <div class="review__content">
+                    <span>Pavithra Kodmad</span>
+                    <h5>@Pkodmad </h5>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+                </div>
+                
+               
+
+            </div>
+
+            <div class="review__content__card">
+
+                <div class="review__img">
+                    <img src="./img/Una.jpg" alt="">
+                </div>
+
+                <div class="review__content">
+                    <span>Darren</span>
+                    <h5>@MrDarrenV </h5>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>Just as I thought <a href="#">@code</a> couldn't get better, out comes its Remote Development plugins that let you remote into containers as a dev environment! 😍</p>
+                </div>
+                
+               
+
+            </div>
+
+            <div class="review__content__card">
+
+                <div class="review__img">
+                    <img src="./img/Una.jpg" alt="">
+                </div>
+
+                <div class="review__content">
+                    <span>Cassidy Williams</span>
+                    <h5>@casidoo </h5>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed.</p>
+                </div>
+            </div>
+            
+            <div class="review__content__card">
+
+                <div class="review__img">
+                    <img src="./img/Una.jpg" alt="">
+                </div>
+
+                <div class="review__content">
+                    <span>Gift Egwuenu</span>
+                    <h5>@lauragift21 </h5>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>Just as I thought <a href="#">@code</a> couldn't get better, out comes its Remote Development plugins that let you remote into containers as a dev environment! 😍</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="infoo">
+        <div class="infoo__wrapper">
+            <div class="infoo__item">
+                <!-- <div class="info__image"> -->
+                    <img src="./img/home-intellisense.svg" alt="">
+                <!-- </div> -->
+                <div class="infoo__text">
+                    <h3>Meet IntelliSense.</h3>
+                    <p>Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+                </div>
+            </div>
+
+            <div class="infoo__item">
+                <!-- <div class="info__image"> -->
+                    <img src="./img/home-debug.svg" alt="">
+                <!-- </div> -->
+                <div class="infoo__text">
+                    <h3>Print statement debugging is a thing of the past.</h3>
+                    <p>Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+                </div>
+            </div>
+
+            <div class="infoo__item">
+                <!-- <div class="info__image"> -->
+                    <img src="./img/home-git.svg" alt="">
+                <!-- </div> -->
+                <div class="infoo__text">
+                    <h3>Git commands built-in..</h3>
+                    <p>Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service</p>
+                </div>
+            </div>
+
+            <div class="infoo__item">
+                <!-- <div class="info__image"> -->
+                    <img src="./img/Hundreds-of-Extensions.png" alt="">
+                <!-- </div> -->
+                <div class="infoo__text">
+                    <h3>Extensible and customizable.</h3>
+                    <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a href="#">Learn more about extensions.</a></p>
+                </div>
+            </div>
+
+            <div class="infoo__item">
+                <!-- <div class="info__image"> -->
+                    <img src="./img/home-azure.svg" alt="">
+                <!-- </div> -->
+                <div class="infoo__text">
+                    <h3>Deploy with confidence and ease</h3>
+                    <p>With <a href="#">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <a href="#">all from within VS Code.</a></p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section class="language">
+        <div class="container">
+            <div class="language__wrapper">
+                <div class="language__title">
+                    <h3>VS Code for</h3>
+                </div>
+
+                <div class="language__content">
+                    <ul>
+                        <li> <img src="./img/javascript.svg" alt=""><h4>JavaScript</h4></li>
+                        <li> <img src="./img/python.svg" alt=""><h4> Python</h4></li>
+                        <li> <img src="./img/java.svg" alt=""> Java</li>
+                        <li> <img src="./img/markdown.svg" alt=""> Markdown</li>
+                        <li> <img src="./img/typescript.svg" alt=""> TypeScript</li>
+                        <li><img src="./img/cpp.svg" alt=""> C/C++</li>
+                    
+                    <li> <img src="./img/json.svg" alt=""> JSON</li>
+                    <li> <img src="./img/powershell.svg" alt=""> Powershell</li>
+                    <li> <img src="./img/html.svg" alt=""> HTML/CSS</li>
+                    <li> <img src="./img/csharp.svg" alt=""> C#</li>
+                    <li> <img src="./img/php.svg" alt=""> PHP</li>
+                    <li> <img src="./img/yaml.svg" alt=""> YAML</li>
+                </ul>
+
+                <div class="mm">
+                    <a href="#">and many more language on the Marketplace...</a>
+                </div>
+                </div>
+
+                <button class="btn">Get Started Now</button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="downloads">
+        <div class="container">
+            <div class="downloads__wrapper">
+                <div class="downloads__content">
+                    <img src="./img/windows-logo.png" alt="">
+                    <button class="btn"><i class="fa-solid fa-arrow-down-long"> </i>Windows <br><small> Windows 8,10,11</small> </button>
+
+                    <table>
+                    <tr>
+                        <td><h4>User Installer</h4></td>
+                        <td><a href="#" class="btnn"></a>x64</td>
+                        <td><a href="#" class="btnn"></a>x86</td>
+                        <td><a href="#" class="btnn"></a>Arm64</td>
+                    </tr>
+
+                    <tr>
+                        <td><h4>Systems Installer</h4></td>
+                        <td><a href="#" class="btnn"></a>x64</td>
+                        <td><a href="#" class="btnn"></a>x86</td>
+                        <td><a href="#" class="btnn"></a>Arm64</td>
+                    </tr>
+
+                    <tr>
+                        <td><h4>.zip</h4></td>
+                        <td><a href="#" class="btnn"></a>x64</td>
+                        <td><a href="#" class="btnn"></a>x86</td>
+                        <td><a href="#" class="btnn"></a>Arm64</td>
+                    </tr>
+
+                    <tr>
+                        <td><h4>CLI</h4></td>
+                        <td><a href="#" class="btnn"></a>x64</td>
+                        <td><a href="#" class="btnn"></a>x86</td>
+                        <td><a href="#" class="btnn"></a>Arm64</td>
+                    </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script type="module">
+        // import {tns} from './src/tiny-slider.js';
+      
+        var slider = tns({
+          container: '.review__wrapper',
+          items: 3,
+          slideBy: 'page',
+          autoplay: false,
+          controlsText:['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
+        //   axis:"vertical",
+
+        responsive:{
+            1020:{
+                items:3,
+            }
+        }
+        });
+        </script>
+
 
     <script src="./script.js"></script>
 

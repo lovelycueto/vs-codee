@@ -7,10 +7,17 @@ $clr-dark:#2c2c32;
 $clr-gray:#a5a5a7;
 
 $clr-bg:#25252b;
-$clr-blue:#0396ff;
+$clr-blue:#0066b8;
+
+$reviewbg:#d0d2d3;
+
+$infoo:#444;
 
 
 
+
+$ff-primary: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+$ff-secondary: "Arial", helvetica sans-serif;
 
 // BREAKPOINT
 $break-sm:500px;
@@ -28,3 +35,5 @@ $desktop: 97rem;
 
 $grid-cols: 12;
 $grid-gap: 1rem;
+
+$shadow:5px 5px 15px 2px rgba(0,0,0,0.06);
